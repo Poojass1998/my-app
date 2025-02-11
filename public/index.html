@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ddd;
+            text-align: center;
+        }
+        .container {
+            width: 400px;
+            background: white;
+            padding: 20px;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        input[type="text"], input[type="file"], select {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #555;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #333;
+        }
+        .link {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <button>GET EMPLOYEE INFORMATION</button>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label>Employee ID:</label>
+            <input type="text" name="emp_id">
+
+            <label>First Name:</label>
+            <input type="text" name="first_name">
+
+            <label>Last Name:</label>
+            <input type="text" name="last_name">
+
+            <label>Primary Skills:</label>
+            <input type="text" name="skills">
+
+            <label>Location:</label>
+            <input type="text" name="location">
+
+            <label>Image:</label>
+            <input type="file" name="image">
+
+            <button type="submit">UPDATE DATABASE</button>
+        </form>
+
+        <div class="link">
+            <a href="#">About Us</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
